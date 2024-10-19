@@ -1,0 +1,41 @@
+#navBar {
+    background-color:rgb(36,162,184)
+}
+
+#imagenNav{
+    width: 20px; 
+    height: 20px; 
+    object-fit: cover;
+    position: relative;
+}
+
+.single-line {
+    white-space: nowrap;
+}
+
+#tablaSeries {
+    max-width: 700px;
+    max-height: 300px;
+}
+
+/*Para tarjetas*/
+.card{
+    width: 350px; 
+    height: auto;
+}
+.hidden {
+    display: none; /* Ocultar tarjetas por defecto */
+}
+
+.link {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card-img-top{
+    width: 350px; 
+    height: 180px; 
+    object-fit: cover;
+    position: relative;
+}
