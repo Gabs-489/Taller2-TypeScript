@@ -19,10 +19,19 @@
 }
 
 /*Para tarjetas*/
+.col {
+    text-align: left; /* Alinear texto dentro de la columna */
+    padding: 0;
+}
+
 .card{
     width: 350px; 
-    height: auto;
+    height: auto; 
+    position: relative; /* Permitir el ajuste de la posición */
+    left: 0; /* Alinear a la izquierda */
 }
+
+
 .hidden {
     display: none; /* Ocultar tarjetas por defecto */
 }
@@ -38,4 +47,6 @@
     height: 180px; 
     object-fit: cover;
     position: relative;
+    display: block; 
+    margin: 0 auto;
 }

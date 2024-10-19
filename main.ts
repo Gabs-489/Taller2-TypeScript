@@ -12,12 +12,9 @@ let links: NodeListOf<Element> = document.querySelectorAll('.link');
 links.forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault(); 
+        serieCard.classList.remove('hidden');
         let clickedLinkId = (event.target as HTMLElement).id;
-        console.log(clickedLinkId);
-
         let id_num: number = Number(clickedLinkId.slice(4));
-        console.log(id_num);
-
         mostrarInfoSerie(series[id_num - 1]); 
     });
 });

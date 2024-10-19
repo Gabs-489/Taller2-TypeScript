@@ -6,10 +6,9 @@ var links = document.querySelectorAll('.link');
 links.forEach(function (link) {
     link.addEventListener("click", function (event) {
         event.preventDefault();
+        serieCard.classList.remove('hidden');
         var clickedLinkId = event.target.id;
-        console.log(clickedLinkId);
         var id_num = Number(clickedLinkId.slice(4));
-        console.log(id_num);
         mostrarInfoSerie(series[id_num - 1]);
     });
 });
